@@ -1,0 +1,599 @@
+.user-profile-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    /* border: 1px solid black; */
+}
+
+.welcome-msg-container,
+.form-error-msg-container,
+.form-success-msg-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 95%;
+    /* position: fixed;
+    background: green; */
+}
+
+.welcome-msg-container p {
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 5px;
+    /* position: fixed; */
+}
+
+.form-error-msg-container small {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    font-family: Arial Narrow;
+    color: red;
+    background-color: rgb(252, 172, 172);
+}
+.form-success-msg-container small {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    font-family: Arial Narrow;
+    color: Green;
+    background-color: rgb(217, 226, 217);
+}
+
+.order-history-container,
+.account-details-container,
+.user-addresses-container,
+.show-add-address-btn-container,
+.address-form-container {
+    background-color: white;
+    padding: 40px;
+    margin-top: 40px;
+    /* border: 1px solid black; */
+}
+
+.account-details-container .default-address-container {
+    margin-bottom: 10px;
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+}
+
+.user-addresses-container {
+    font-family: Arial Narrow;
+}
+
+.address-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-addresses-container .address-container {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.user-addresses-container .address-container h3 {
+    color: #4caf50;
+}
+
+.user-addresses-container p {
+    color: rgb(95, 95, 95);
+}
+
+.user-addresses-container .address-container .manage-address-container {
+    margin-top: 15px;
+}
+
+.user-addresses-container .address-container .manage-address-container a {
+    text-decoration: none;
+    color: rgb(24, 125, 240);
+    cursor: pointer;
+}
+
+.user-addresses-container .address-container .manage-address-container a:hover {
+    color: rgb(94, 160, 235);
+}
+
+.address-form-container {
+    display: none;
+}
+
+.order-history-container h2,
+.account-details-container h2,
+.user-addresses-container h2,
+.address-form-container h2 {
+    font-family: Arial Narrow;
+    color: #1f1a37;
+    margin-bottom: 10px;
+}
+
+/* BUILD ORDER STYLING */
+
+.order-history-container p {
+    font-family: Arial Narrow;
+    color: rgb(175, 175, 175);
+}
+
+.buildOrder {
+    display: block;
+    margin-top: 25px;
+    /* border-bottom: 1px solid black; */
+}
+
+.ordered-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    border-bottom: 1px solid whitesmoke;
+}
+.ordered-details label {
+    margin-bottom: 2px;
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+    width: 100%;
+}
+
+.ordered-details label .status {
+    color: orangered;
+}
+
+.ordered-console-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.ordered-console-container .img-wrapper {
+    width: 15vw;
+    /* border: 1px solid black; */
+}
+
+.ordered-console-container p {
+    /* border: 1px solid black; */
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+    width: 40%;
+}
+
+.ordered-console-container .img-wrapper img {
+    width: 100%;
+}
+
+.ordered-parts-container {
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ordered-parts-container .part-details {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ordered-parts-container .part-details .img-wrapper {
+    width: 15vw;
+    /* border: 1px solid black; */
+}
+
+.ordered-parts-container .part-details .img-wrapper img {
+    width: 100%;
+}
+
+.ordered-parts-container .part-details p {
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+    width: 30%;
+    /* border: 1px solid black; */
+}
+
+/* ACCOUNT ADDRESS STYLING */
+
+.account-details-container a {
+    font-family: Arial Narrow;
+    text-decoration: none;
+    color: rgb(24, 125, 240);
+}
+
+.account-details-container a:hover {
+    color: rgb(94, 160, 235);
+}
+
+.show-add-address-btn-container button {
+    padding: 8px;
+    border: none;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #1f1a37;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+.backto-user-profile-container,
+.checkout-container {
+    margin-top: 40px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.backto-user-profile-container a,
+.checkout-container a {
+    font-family: wollicht-main;
+    color: #1f1a37;
+    text-decoration: none;
+}
+
+/* EDIT Adresss styling */
+.editAddressContainer {
+    margin-top: 10px;
+    display: none;
+    /* border: 1px solid black; */
+}
+
+/* ADD New Address styling */
+.new-address-form,
+.edit-address-form {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.new-address-form .group-form-container,
+.edit-address-form .group-form-container {
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.new-address-form .group-form-container .form-container,
+.edit-address-form .group-form-container .form-container {
+    margin-top: 10px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.new-address-form .group-form-container .form-container label,
+.new-address-form .form-container label,
+.edit-address-form .group-form-container .form-container label,
+.edit-address-form .form-container label {
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+    padding: 3px 0;
+    width: 100%;
+}
+.new-address-form .group-form-container .form-container input,
+.new-address-form .form-container input,
+.edit-address-form .group-form-container .form-container input,
+.edit-address-form .form-container input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.new-address-form .form-container,
+.edit-address-form .form-container {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.new-address-form #form-checkbox,
+.edit-address-form #form-checkbox {
+    margin-top: 10px;
+    width: 100%;
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+    /* border: 1px solid black; */
+}
+
+.new-address-form #form-action-btn-container,
+.edit-address-form #form-action-btn-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.new-address-form #form-action-btn-container button {
+    padding: 8px;
+    border: none;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #1f1a37;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+.edit-address-form #form-action-btn-container button {
+    padding: 8px;
+    border: none;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #1f1a37;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+.new-address-form #hide-form-address-container,
+.edit-address-form #hide-form-address-container {
+    /* border: 1px solid purple; */
+    padding: 3px;
+    text-align: center;
+    font-family: Arial Narrow;
+    color: #1f1a37;
+    cursor: pointer;
+}
+
+.new-address-form #hide-form-address-container a:hover,
+.edit-address-form #hide-form-address-container a:hover,
+.backto-user-profile-container a:hover {
+    color: #564d85;
+}
+
+/* MODAL STYLING */
+/* DELETE ADDRESS */
+.delete-address-modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.delete-address-modal-container .modal-content {
+    width: 50vw;
+    height: 40vh;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .welcome-msg-container p {
+        text-align: right;
+    }
+    .user-profile-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .order-history-container,
+    .user-addresses-container {
+        width: 60%;
+    }
+
+    /* BUILD ORDER STYLING */
+
+    .buildOrder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    .buildOrder .ordered-details {
+        margin: 0;
+        width: 50%;
+        border: none;
+    }
+    .buildOrder .ordered-item-details {
+        margin: 0;
+        width: 40%;
+        /* border: 1px solid black; */
+    }
+
+    .buildOrder .ordered-item-details .ordered-console-container {
+        margin: 0;
+    }
+
+    .buildOrder .ordered-item-details .ordered-console-container .img-wrapper {
+        /* border: 1px solid black; */
+        width: 40%;
+    }
+
+    .buildOrder .ordered-item-details .ordered-console-container p {
+        /* border: 1px solid black; */
+        width: 40%;
+    }
+
+    .ordered-parts-container {
+        /* border: 1px solid purple; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .ordered-parts-container .part-details {
+        /* border: 1px solid black; */
+        width: 30%;
+    }
+
+    .ordered-parts-container .part-details .img-wrapper {
+        width: 30%;
+        /* border: 1px solid black; */
+    }
+
+    .ordered-parts-container .part-details p {
+        width: 30%;
+        font-size: 1.3vw;
+        /* border: 1px solid black; */
+    }
+
+    .address-form-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .account-details-container,
+    .show-add-address-btn-container {
+        width: 30%;
+    }
+
+    /* ADDRESSES STYLING */
+
+    .backto-user-profile-container {
+        width: 100%;
+    }
+
+    /* ADDRESS FORM STYLING */
+    .new-address-form .group-form-container,
+    .edit-address-form .group-form-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .new-address-form .group-form-container .form-container,
+    .edit-address-form .group-form-container .form-container {
+        width: 48.5%;
+    }
+
+    .new-address-form #form-action-btn-container button {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .welcome-msg-container p {
+        text-align: right;
+    }
+    .user-profile-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .order-history-container,
+    .user-addresses-container {
+        width: 60%;
+    }
+
+    /* BUILD ORDER STYLING */
+
+    .buildOrder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    .buildOrder .ordered-details {
+        margin: 0;
+        width: 50%;
+        border: none;
+    }
+    .buildOrder .ordered-item-details {
+        margin: 0;
+        width: 40%;
+        /* border: 1px solid black; */
+    }
+
+    .buildOrder .ordered-item-details .ordered-console-container {
+        margin: 0;
+    }
+
+    .buildOrder .ordered-item-details .ordered-console-container .img-wrapper {
+        /* border: 1px solid black; */
+        width: 40%;
+    }
+
+    .buildOrder .ordered-item-details .ordered-console-container p {
+        /* border: 1px solid black; */
+        width: 40%;
+    }
+
+    .ordered-parts-container {
+        /* border: 1px solid purple; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .ordered-parts-container .part-details {
+        /* border: 1px solid black; */
+        width: 30%;
+    }
+
+    .ordered-parts-container .part-details .img-wrapper {
+        width: 30%;
+        /* border: 1px solid black; */
+    }
+
+    .ordered-parts-container .part-details p {
+        width: 30%;
+        font-size: 1vw;
+        /* border: 1px solid black; */
+    }
+
+    .address-form-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .account-details-container,
+    .show-add-address-btn-container {
+        width: 30%;
+    }
+
+    /* ADDRESSES STYLING */
+
+    .backto-user-profile-container {
+        width: 100%;
+    }
+
+    /* ADDRESS FORM STYLING */
+    .new-address-form .group-form-container,
+    .edit-address-form .group-form-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .new-address-form .group-form-container .form-container,
+    .edit-address-form .group-form-container .form-container {
+        width: 48.5%;
+    }
+
+    .new-address-form #form-action-btn-container button {
+        width: 30%;
+    }
+}

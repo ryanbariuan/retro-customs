@@ -1,0 +1,209 @@
+@font-face {
+    font-family: wollicht-main;
+    src: url(fonts/wollicht/Wollicht-MainLayer.ttf);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    padding-top: 37.5%;
+    padding-bottom: 5%;
+    min-height: 100%;
+    background-color: whitesmoke;
+}
+
+/* FOOTER STYLING */
+
+/* Mobile */
+
+footer {
+    background-color: #1f1a37;
+    border-top: 5px solid #ffbd59;
+    padding: 10px;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.footer-info-container {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-container div {
+    margin-top: 10px;
+}
+
+.footer-info-container div h4 {
+    font-family: wollicht-main;
+    color: rgb(214, 214, 214);
+}
+.footer-info-container div p,
+.footer-info-container div ul,
+.footer-ref-container p,
+.footer-ref-container p a {
+    font-family: Arial Narrow;
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-info-container div .more-info a {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+}
+
+.footer-info-container div p,
+.footer-info-container div ul {
+    font-size: 14px;
+}
+
+.footer-info-container div ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.footer-ref-container {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #2c2747;
+}
+
+.footer-ref-container p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Font Awesome Styling */
+
+.footer-info-container div ul .fa {
+    padding: 10px;
+    width: 13%;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    /* border: 1px solid white; */
+    border-radius: 25px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+@media only screen and (min-width: 468px) and (max-width: 767px) {
+    main {
+        padding-top: 27.5%;
+    }
+
+    .footer-info-container div ul .fa {
+        width: 10%;
+        font-size: 25px;
+    }
+
+    .footer-info-container div p,
+    .footer-info-container div ul {
+        font-size: 15px;
+    }
+
+    .footer-ref-container p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    main {
+        padding-top: 18.5%;
+    }
+
+    .footer-info-container {
+        flex-direction: row;
+        justify-content: space-around;
+        /* border: 1px solid white; */
+        padding-bottom: 30px;
+    }
+
+    .footer-info-container div {
+        width: 28%;
+    }
+
+    .footer-info-container div .social-media-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        /* border: 1px solid white; */
+    }
+    .footer-info-container div .social-media-links li {
+        /* border: 1px solid red; */
+        width: 30%;
+    }
+
+    .footer-info-container div ul .fa {
+        width: 100%;
+        border-radius: 0;
+        /* border: 1px solid white; */
+    }
+}
+
+/* @media only screen and (min-width: 992px) and (max-width: 1024px) { */
+@media only screen and (min-width: 992px) {
+    main {
+        padding-top: 12.5%;
+    }
+
+    .footer-info-container {
+        flex-direction: row;
+        justify-content: space-around;
+        /* border: 1px solid white; */
+        padding-bottom: 50px;
+    }
+
+    .footer-info-container div {
+        width: 28%;
+    }
+
+    .footer-info-container div .social-media-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-info-container div .social-media-links li {
+        width: 18%;
+    }
+
+    .footer-info-container div ul .fa {
+        width: 100%;
+        border-radius: 0;
+        font-size: 35px;
+    }
+}
+
+/* @media only screen and (min-width: 1025px) {
+    main {
+        padding-top: 11%;
+    }
+} */

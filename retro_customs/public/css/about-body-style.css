@@ -1,0 +1,88 @@
+.about-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    /* border: 1px solid black; */
+}
+
+.about-container .about-header {
+    margin-top: 10px;
+    text-align: center;
+    font-family: wollicht-main;
+    color: #1f1a37;
+}
+
+.about-container .brand-logo {
+    margin-top: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+}
+
+.about-container .brand-logo .logo-img-wrapper {
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+.logo-img-wrapper img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid green; */
+}
+
+.about-container .about-content {
+    margin-top: 15px;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+.about-container .about-content h2 {
+    text-align: center;
+    font-family: wollicht-main;
+    color: #1f1a37;
+}
+
+.about-container .about-content p {
+    margin: 5px 0;
+    font-family: Arial Narrow;
+    color: rgb(99, 97, 97);
+    text-align: justify;
+}
+
+.about-container .about-content h3 {
+    margin: 10px 0;
+    font-family: Arial Narrow;
+    color: rgb(99, 97, 97);
+}
+
+.about-container .about-content ul {
+    margin-top: 10px;
+    font-family: Arial Narrow;
+    color: rgb(99, 97, 97);
+    list-style-position: inside;
+}
+
+.about-container .about-content ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-container .brand-logo .logo-img-wrapper {
+        width: 25%;
+    }
+    .about-container {
+        width: 60%;
+    }
+}

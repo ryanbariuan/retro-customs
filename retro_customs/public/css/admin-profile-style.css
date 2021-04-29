@@ -1,0 +1,421 @@
+.errorSpanMsg {
+    margin-top: 10px;
+    font-family: Arial Narrow;
+    display: block;
+    color: red;
+    background-color: rgb(252, 172, 172);
+    padding: 10px;
+    text-align: center;
+}
+
+.successSpanMsg {
+    margin-top: 10px;
+    font-family: Arial Narrow;
+    display: block;
+    color: green;
+    background-color: rgb(217, 226, 217);
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-container {
+    margin-top: 10px;
+    /* padding-bottom: 20px; */
+    padding: 5px 5px 20px 5px;
+    /* border: 1px solid black; */
+}
+
+.profile-container h1 {
+    text-align: center;
+    font-family: wollicht-main;
+    color: #1f1a37;
+}
+
+.product-manage-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.product-manage-container h4 {
+    font-family: Arial Narrow;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.product-manage-container .admin-btn-container .btn-add-console,
+.product-manage-container .admin-btn-container .btn-add-parts {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f1a37;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+.product-manage-container .admin-btn-container .btn-add-console:hover,
+.product-manage-container .admin-btn-container .btn-add-parts:hover {
+    color: white;
+    background-color: #3c3755;
+}
+
+.display-console-container,
+.display-parts-container {
+    margin-top: 15px;
+    overflow-y: auto;
+}
+
+.display-console-container table,
+.display-parts-container table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial Narrow;
+}
+
+.display-console-container table td,
+.display-console-container table th,
+.display-parts-container table td,
+.display-parts-container table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.display-console-container table td .table-image-wrapper,
+.display-parts-container table td .table-image-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.display-console-container table td .table-image-wrapper img,
+.display-parts-container table td .table-image-wrapper img {
+    width: 100%;
+}
+
+.display-console-container table .div-manage-btns,
+.display-parts-container table .div-manage-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80px;
+    /* border: 1px solid black; */
+}
+
+.display-console-container table td .btn-edit-console,
+.display-console-container table td .btn-delete-console,
+.display-console-container table td .btn-restore-console,
+.display-parts-container table td .btn-edit-part,
+.display-parts-container table td .btn-delete-part,
+.display-parts-container table td .btn-restore-part {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 2px;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.display-console-container table td .btn-delete-console,
+.display-parts-container table td .btn-delete-part {
+    background-color: #d11a2a;
+    color: black;
+}
+
+.display-console-container table td .btn-delete-console:hover,
+.display-parts-container table td .btn-delete-part:hover {
+    background-color: #e2414f;
+    color: white;
+}
+
+.display-console-container table th,
+.display-parts-container table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4caf50;
+    color: white;
+}
+
+.display-console-container table tr:hover,
+.display-parts-container table tr:hover {
+    background-color: #a8c0a9;
+}
+
+.display-console-container table .deletedItemRow,
+.display-parts-container table .deletedItemRow {
+    background-color: #eb4c5a;
+}
+
+.display-console-container table .deletedItemRow:hover,
+.display-parts-container table .deletedItemRow:hover {
+    background-color: #f17882;
+}
+
+/* ADD, EDIT, DELETE and RESTORE CONSOLE MODAL */
+.add-console-modal-container,
+.edit-console-modal-container,
+.delete-console-modal-container,
+.restore-console-modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.add-part-modal-container,
+.edit-part-modal-container,
+.delete-part-modal-container,
+.restore-part-modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.add-part-modal-container .modal-content,
+.edit-part-modal-container .modal-content,
+.delete-part-modal-container .modal-content,
+.restore-part-modal-container .modal-content {
+    height: 90vh;
+}
+
+.add-part-modal-container .modal-content h3,
+.edit-part-modal-container .modal-content h3,
+.delete-part-modal-container .modal-content h3,
+.restore-part-modal-container .modal-content h3 {
+    margin-top: 20px;
+}
+
+.delete-console-modal-container .modal-content,
+.restore-console-modal-container .modal-content,
+.delete-part-modal-container .modal-content,
+.restore-part-modal-container .modal-content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-console-modal-container .modal-content h3,
+.restore-console-modal-container .modal-content h3,
+.delete-part-modal-container .modal-content h3,
+.restore-part-modal-container .modal-content h3 {
+    margin-top: 80px;
+    /* border: 1px solid black; */
+}
+
+.modal-content {
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.modal-content h3,
+.modal-content form label {
+    font-family: Arial Narrow;
+    padding: 4px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.modal-content form {
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content form input,
+.modal-content form textarea,
+.modal-content form select {
+    border: 1px solid lightgray;
+    padding: 3px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.modal-content form button {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: #1f1a37;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+.modal-content form button:hover {
+    color: white;
+    background-color: #3c3755;
+}
+
+.btn-close,
+.btn-close-edit,
+.btn-close-delete,
+.btn-close-restore {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-radius: 25px;
+    padding: 1px 5px;
+    font-size: 25px;
+    color: #1f1a37;
+    background-color: #ffbd59;
+    border: 3px solid #1f1a37;
+    cursor: pointer;
+}
+
+.btn-close:hover,
+.btn-close-edit:hover,
+.btn-close-delete:hover,
+.btn-close-restore:hover {
+    color: red;
+}
+
+/* PAGINATION */
+.w-5 {
+    display: none;
+}
+
+.display-parts-container nav {
+    margin: 10px 0;
+}
+
+.display-parts-container nav .pagination {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    font-family: Arial Narrow;
+    text-decoration: none;
+}
+
+.display-parts-container nav .pagination a {
+    text-decoration: none;
+    color: rgb(24, 125, 240);
+}
+
+.display-parts-container nav .pagination li.active {
+    color: white;
+    background-color: rgb(24, 125, 240);
+    border: 1px solid rgb(94, 160, 235);
+}
+
+.display-parts-container nav .pagination li {
+    padding: 3px;
+    border: 1px solid lightgray;
+    margin: 0 1px;
+}
+
+.display-parts-container nav .pagination li a:visited {
+    color: rgb(24, 125, 240);
+    text-decoration: none;
+}
+
+/* END PAGINATION */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .product-manage-container {
+        width: 90%;
+    }
+
+    .display-console-container table td .table-image-wrapper,
+    .display-parts-container table td .table-image-wrapper {
+        width: 30%;
+    }
+
+    /* MODAL */
+    .delete-console-modal-container .modal-content,
+    .restore-console-modal-container .modal-content,
+    .delete-part-modal-container .modal-content,
+    .restore-part-modal-container .modal-content {
+        width: 60vw;
+    }
+
+    .modal-content {
+        height: 80vh;
+    }
+    .modal-content h3 {
+        font-size: 28px;
+    }
+
+    .modal-content form {
+        width: 80%;
+    }
+
+    .modal-content form label,
+    .modal-content form button {
+        font-size: 16px;
+    }
+
+    .modal-content form input,
+    .modal-content form textarea,
+    .modal-content form select {
+        padding: 13px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .product-manage-container {
+        width: 90%;
+    }
+
+    .display-console-container table td .table-image-wrapper,
+    .display-parts-container table td .table-image-wrapper {
+        width: 20%;
+    }
+    /* MODAL */
+    .delete-console-modal-container .modal-content,
+    .restore-console-modal-container .modal-content,
+    .delete-part-modal-container .modal-content,
+    .restore-part-modal-container .modal-content {
+        width: 60vw;
+    }
+
+    .modal-content {
+        height: 80vh;
+    }
+    .modal-content h3 {
+        margin-top: 50px;
+        font-size: 36px;
+    }
+
+    .modal-content form {
+        width: 40%;
+    }
+
+    .modal-content form label,
+    .modal-content form button {
+        font-size: 18px;
+    }
+
+    .modal-content form button {
+        margin-top: 40px;
+    }
+
+    .modal-content form input,
+    .modal-content form textarea,
+    .modal-content form select {
+        padding: 13px;
+        font-size: 16px;
+    }
+}

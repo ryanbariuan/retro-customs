@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: wollicht-main;
+    src: url(fonts/wollicht/Wollicht-MainLayer.ttf);
+}
+
+/* Header Styling */
+
+header {
+    width: 100%;
+    position: fixed;
+    /* position: sticky; */
+    top: 0;
+    border-bottom: 5px solid #ffbd59;
+    background-color: #1f1a37;
+    padding: 2px;
+}
+
+.logo-container {
+    width: 22%;
+}
+
+.header-logo {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+header nav {
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu li {
+    font-size: 14px;
+    padding: 15px 5px;
+}
+
+.nav-menu a {
+    /* color: white; */
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    display: block;
+}
+
+.nav-menu .button form button {
+    font-family: Arial Narrow;
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.button.secondary {
+    border-bottom: 1px solid #2c2747;
+}
+
+/* Mobile Styling */
+
+.toggle {
+    cursor: pointer;
+    order: 1;
+}
+
+.nav-links.button {
+    order: 2;
+}
+
+.nav-links {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.bars {
+    background: #ffbd59;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 22px;
+    vertical-align: middle;
+}
+
+.bars::before,
+.bars::after {
+    background: #ffbd59;
+    display: inline-block;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 22px;
+}
+
+.bars::before {
+    top: 8px;
+}
+
+.bars::after {
+    top: -8px;
+}
+
+/* Tablet Styling */
+
+@media only screen and (min-width: 468px) and (max-width: 767px) {
+    .nav-menu {
+        justify-content: center;
+    }
+
+    .nav-menu li {
+        padding: 15px 10px;
+    }
+
+    .logo-container {
+        width: 18%;
+        margin-right: auto;
+        /* border: 1px solid black; */
+    }
+
+    .nav-links.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .nav-menu .button a,
+    .nav-menu .button form button {
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: #008037;
+        /* border: 1px solid #ffbd59; */
+        border: 1px solid #135831;
+        border-radius: 18px;
+    }
+
+    .nav-menu .button form button:hover {
+        transition: all 0.25s;
+        background-color: transparent;
+        border-color: #124729;
+        color: white;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all 0.25s;
+    }
+    .button:not(.secondary) a:hover {
+        background-color: #135831;
+        border-color: #124729;
+    }
+
+    .button.secondary a:hover {
+        color: #ffbd59;
+    }
+}
+
+/*SMALL DESKTOP LARGE TABLET 768px VIEW */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-wrap {
+        width: 95%;
+        margin: auto;
+    }
+    .nav-links {
+        display: block;
+        width: auto;
+        order: 1;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo-container {
+        order: 0;
+        margin-right: auto;
+        width: 12%;
+    }
+    .button {
+        order: 2;
+    }
+    .nav-menu .nav-links {
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .nav-menu .button a,
+    .nav-menu .button form button {
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: #008037;
+        /* border: 1px solid #ffbd59; */
+        border: 1px solid #135831;
+        border-radius: 18px;
+    }
+
+    .nav-menu .button form button:hover {
+        transition: all 0.25s;
+        background-color: transparent;
+        border-color: #124729;
+        color: white;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all 0.25s;
+    }
+    .button:not(.secondary) a:hover {
+        background-color: #135831;
+        border-color: #124729;
+    }
+
+    .button.secondary a:hover {
+        color: #ffbd59;
+    }
+}
+/* LARGE DESKTOP */
+@media only screen and (min-width: 992px) {
+    .header-wrap {
+        width: 95%;
+        margin: auto;
+    }
+    .logo-container {
+        order: 0;
+        margin-right: auto;
+        width: 8%;
+    }
+    .nav-links {
+        display: block;
+        width: auto;
+        order: 1;
+    }
+    .toggle {
+        display: none;
+    }
+
+    .button {
+        order: 2;
+    }
+    .nav-menu .nav-links {
+        margin-left: 20px;
+        padding: 0;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .nav-menu .button a,
+    .nav-menu .button form button {
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: #008037;
+        /* border: 1px solid #ffbd59; */
+        border: 1px solid #135831;
+        border-radius: 18px;
+    }
+
+    .nav-menu .button form button:hover {
+        transition: all 0.25s;
+        background-color: transparent;
+        border-color: #124729;
+        color: white;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all 0.25s;
+    }
+    .button:not(.secondary) a:hover {
+        background-color: #135831;
+        border-color: #124729;
+    }
+
+    .button.secondary a:hover {
+        color: #ffbd59;
+    }
+}

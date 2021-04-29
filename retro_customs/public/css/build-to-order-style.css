@@ -1,0 +1,255 @@
+.build-order-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+}
+
+.build-order-container-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: white; */
+}
+
+.build-order-container .console-img-container {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.build-order-container .console-img-container .img-wrapper,
+.extra-part-container .img-wrapper {
+    background-color: white;
+}
+
+.build-order-container .console-img-container .img-wrapper img,
+.extra-part-container .img-wrapper img {
+    width: 100%;
+}
+
+.build-order-container .build-order-header {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.build-order-container .build-order-desc {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.build-order-container .build-order-header h1,
+.build-order-form-container .build-order-form h1 {
+    text-align: center;
+    font-family: wollicht-main;
+    color: #1f1a37;
+}
+
+.build-order-container .build-order-desc p,
+.build-order-container .build-order-header p {
+    margin-top: 10px;
+    font-family: Arial Narrow;
+    text-align: center;
+    color: rgb(95, 95, 95);
+}
+
+.build-order-container .build-order-desc .description {
+    margin-top: 15px;
+}
+
+.build-order-container .build-order-desc .description h4,
+.extra-order-container h4 {
+    font-family: Arial Narrow;
+    text-align: center;
+    color: #1f1a37;
+}
+
+.build-order-form-container {
+    margin-top: 20px;
+    border: 1px solid lightgray;
+}
+
+.build-order-form-container .build-order-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 15px;
+}
+
+.build-order-form-container .build-order-form label,
+.build-order-form-container .build-order-form select {
+    width: 100%;
+    font-family: Arial Narrow;
+}
+.build-order-form-container .build-order-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(95, 95, 95);
+    /* text-transform: uppercase; */
+}
+
+.build-order-form-container .build-order-form select {
+    margin-top: 3px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: none;
+}
+
+.build-order-form-container .build-order-form button {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f1a37;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+.build-order-form-container .build-order-form .totalPrice {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+/* EXTRA PARTS CART */
+
+.extra-order-container {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.extra-button-container,
+.extra-lens-container,
+.extra-screen-container,
+.extra-shell-container,
+.extra-battery-container {
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    padding: 5px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.extra-order-container .img-wrapper {
+    width: 20%;
+}
+
+.extra-order-container .img-wrapper img {
+    width: 100%;
+}
+
+.extra-order-container .part-name,
+.extra-order-container .part-price {
+    /* border: 1px solid black; */
+    width: 30%;
+    font-family: Arial Narrow;
+    color: rgb(95, 95, 95);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .build-order-container-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .build-order-container-wrapper .welcome-msg-container {
+        width: 100%;
+    }
+
+    .build-order-container-wrapper .console-details-container {
+        width: 50%;
+        padding: 5px;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .build-order-container-wrapper
+        .console-details-container
+        .console-img-container {
+        order: 1;
+    }
+
+    .build-order-container-wrapper
+        .console-details-container
+        .build-order-header {
+        order: 0;
+    }
+
+    .build-order-container-wrapper
+        .console-details-container
+        .build-order-desc {
+        order: 2;
+    }
+
+    .build-order-container .build-order-desc {
+        border: none;
+    }
+
+    .build-order-container-wrapper .build-order-form-container {
+        margin: 0;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .build-order-container-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .build-order-container-wrapper .welcome-msg-container {
+        width: 100%;
+    }
+
+    .build-order-container-wrapper .console-details-container {
+        width: 50%;
+        padding: 5px;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .build-order-container-wrapper
+        .console-details-container
+        .console-img-container {
+        order: 1;
+    }
+
+    .build-order-container-wrapper
+        .console-details-container
+        .build-order-header {
+        order: 0;
+    }
+
+    .build-order-container-wrapper
+        .console-details-container
+        .build-order-desc {
+        order: 2;
+    }
+
+    .build-order-container .build-order-desc {
+        border: none;
+    }
+
+    .build-order-container-wrapper .build-order-form-container {
+        margin: 0;
+        width: 40%;
+    }
+}
